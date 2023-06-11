@@ -249,7 +249,9 @@ a {
 .modal-context{
   display: flex;
   flex-direction: column;
-  margin-inline: 40px;
+  padding-inline: 40px;
+  width: 528px;
+  height: 581px;
 }
 .modal-text{
   margin-top: 40px;
@@ -260,7 +262,7 @@ a {
   letter-spacing: 0.03em;
   color: #212121;
   line-height: 1.15;
-}
+} 
 .form-space{
   display: flex;
   flex-direction: column;
@@ -281,23 +283,81 @@ a {
 .input-size{
   width: 100%;
   height: 40px;
-  padding-left: 42px;
-}
-.space{
-  position: relative;
-}
-.form-icons{
-  position: absolute;
-  margin: 11px 12px;
-  top: 15px
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .comment-space{
   height: 120px;
-  padding: 12px 16px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.comment-space:focus,
+.comment-space:active,
+.comment-space:hover{
+  border-color: #2196f3;
+  outline: none;
+}
+.form-space .space {
+  position: relative;
+}
+.form-icons {
+  position: absolute;
+  margin: 11px 12px;
+  top: 26px;
+  transform: translateY(-50%); 
+}
+.icon-color{
+  height: 100%;
+  width: 100%;
+}
+.form-space .input-size {
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-space .input-size:focus,
+.form-space .input-size:active  {
+  border-color: #2196f3;
+  outline: none;
+}
+.input-size:focus + .form-icons use,
+.input-size:active + .form-icons use {
+  fill: #2196f3;
+}
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #2196f3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #2196f3;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .form-btn{
   display: flex;
@@ -307,11 +367,12 @@ a {
   background-color: var(--focus-active-hovercolor);
   color:  var(--darkbd-fontcolor);
   margin-inline: 124px;
-  margin-bottom: 40px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
 
 }
 .checkbox-item{
@@ -326,6 +387,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0;
 }
 .checkbox-text > a{
   color: var(--focus-active-hovercolor);
@@ -727,6 +789,4 @@ a {
  position: absolute;
  top: 13px;
  right: 28px;
-
-
 }
