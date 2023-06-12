@@ -325,13 +325,12 @@ a {
   outline: none;
   fill: #2196f3;
 }
-.space:focus .form-icons,
+.space:focus-within .form-icons,
 .space:active .form-icons
 {
   fill: #2196f3;
   outline: none;
-  outline-offset: 0px;
-  
+  outline-offset: 0px; 
 }
 .form-group input {
   padding: 0;
