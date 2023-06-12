@@ -12,9 +12,8 @@
     <symbol id="icon-email" viewBox="0 0 32 32">
       <path d="M27 5H5L3 8v16l2 3h22l2-3V8l-2-3zm-1 6-9 6h-2l-9-6-1-1 2-1 9 6 9-6a1 1 0 1 1 1 2z"/>
     </symbol>
-     <symbol id="icon-icon-check" viewBox="0 0 34 32">
-      <path fill="#2196f3" d="M4 0h26c2 0 4 2 4 4v24c0 2-2 4-4 4H4c-2 0-4-2-4-4V4c0-2 2-4 4-4z" style="fill:var(--color1, #2196f3)"/>
-      <path fill="#fff" stroke="#fff" stroke-width=".4" d="M8 17v-1l-2 2 8 8 16-16-2-2-14 14-6-5z" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)"/>
+     <symbol id="icon-checkgood" viewBox="0 0 42 32">
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.4 16l-3.2 3.2 9.6 9.6h3.2l22.4-22.4-3.2-3.2-22.4 19.2-6.4-6.4z"></path>
     </symbol>
   </defs>
 </svg>
